@@ -8,3 +8,4 @@ utils/DropdownHandler.class
 utils/Waiter.class
 utils/Driver.class
 steps/Hooks.class
+pages/GoogleSearchPage.class
