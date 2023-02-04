@@ -7,7 +7,7 @@ import utils.Driver;
 
 public class GoogleSearchPage {
 
-    public GoogleSearchPage(){
+    public GoogleSearchPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

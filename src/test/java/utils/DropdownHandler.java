@@ -9,10 +9,10 @@ public class DropdownHandler {
 
     //Create a method that takes a dropdown options and optionText that you want to put
 
-    public static void clickOnDropdownOption(WebElement dropdown, List<WebElement> dropdownOptions, String optionText){
+    public static void clickOnDropdownOption(WebElement dropdown, List<WebElement> dropdownOptions, String optionText) {
         dropdown.click();
         for (WebElement dropdownOption : dropdownOptions) {
-            if (dropdownOption.getText().equals(optionText)){
+            if (dropdownOption.getText().equals(optionText)) {
                 dropdownOption.click();
                 break;
             }
@@ -20,15 +20,15 @@ public class DropdownHandler {
     }
 
     //Methods for select dropdown
-    public static void selectByVisibleText(WebElement dropdown, String text){
+    public static void selectByVisibleText(WebElement dropdown, String text) {
         new Select(dropdown).selectByVisibleText(text);
     }
 
-    public static void selectByIndex(WebElement dropdown, int index){
+    public static void selectByIndex(WebElement dropdown, int index) {
         new Select(dropdown).selectByIndex(index);
     }
 
-    public static void selectByValue(WebElement dropdown, String text){
+    public static void selectByValue(WebElement dropdown, String text) {
         new Select(dropdown).selectByValue(text);
     }
 

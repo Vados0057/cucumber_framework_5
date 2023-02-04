@@ -6,7 +6,7 @@ import utils.Driver;
 public class Hooks {
 
     @After
-    public void teardown(){
+    public void teardown() {
         Driver.quitDriver();
     }
 }

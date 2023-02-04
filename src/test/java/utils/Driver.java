@@ -15,12 +15,12 @@ public class Driver {
     private Driver() {
     }
 
-    public static WebDriver getDriver(){
-        if(driver == null){
+    public static WebDriver getDriver() {
+        if (driver == null) {
             //This info should come from a global file where we put such important information
             String browser = ConfigReader.getProperty("browser");
 
-            switch (browser.toLowerCase()){
+            switch (browser.toLowerCase()) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();

@@ -10,7 +10,7 @@ public class BaseSteps {
     WebDriver driver;
 
     @Before
-    public void setup(){
+    public void setup() {
         driver = Driver.getDriver();
     }
 
