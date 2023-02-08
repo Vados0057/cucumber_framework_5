@@ -27,6 +27,8 @@ public class BaseSteps {
         for (String word : key.split(" ")) {
             Assert.assertTrue(driver.getCurrentUrl().contains(word));
         }
+//        Assert.assertTrue(driver.getCurrentUrl().contains(key.trim().replaceAll(" ", "_")));
+//
     }
 
     @Then("user should see {string} in the title")
