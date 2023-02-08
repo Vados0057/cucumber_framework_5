@@ -20,4 +20,7 @@ public class TechGlobalLoginPage extends TechGlobalBasePage {
     @FindBy(id = "error_message")
     public WebElement errorMessage;
 
+    @FindBy(id = "success_lgn")
+    public WebElement successMessage;
+
 }

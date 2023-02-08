@@ -135,8 +135,17 @@ public class TechGlobalSteps {
     }
 
     @Then("user should see a {string} message")
-    public void userShouldSeeAMessage(String arg0) {
-    Assert.assertTrue(techGlobalLoginPage.errorMessage.isDisplayed());
-    Assert.assertEquals(arg0, techGlobalLoginPage.errorMessage.getText());
+    public void userShouldSeeAMessage(String errorMessage) {
+        switch (errorMessage) {
+            case "Invalid Username entered!":
+            case "Invalid Password entered!":
+                Assert.assertEquals(errorMessage, techGlobalLoginPage.errorMessage.getText());
+                break;
+            case "You are logged in":
+                Assert.assertEquals(errorMessage, techGlobalLoginPage.successMessage.getText());
+                break;
+            default:
+                throw new NotFoundException("The error message is not defined properly in the feature file");
+        }
     }
 }

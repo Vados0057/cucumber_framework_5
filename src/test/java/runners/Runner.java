@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = "steps",
-        tags = "@Smoke",
-        dryRun = true,
+        tags = "@Login",
+        dryRun = false,
         monochrome = false
 )
 
