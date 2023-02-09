@@ -12,19 +12,19 @@ import utils.TextHandler;
 
 public class GoogleSteps {
 
-//    WebDriver driver;
-//    GoogleSearchPage googleSearchPage;
-//
+    WebDriver driver;
+    GoogleSearchPage googleSearchPage;
+
 //    @Before
 //    public void setup() {
 //        driver = Driver.getDriver();
 //        googleSearchPage = new GoogleSearchPage();
 //    }
 
-//    @When("user search for {string}")
-//    public void user_search_for(String key) {
-//        googleSearchPage.searchInputBox.sendKeys(key + Keys.ENTER);
-//    }
+    @When("user search for {string}")
+    public void user_search_for(String key) {
+        googleSearchPage.searchInputBox.sendKeys(key + Keys.ENTER);
+    }
 //
 //    @Then("user should see {string} in the url")
 //    public void user_should_see_in_the_url(String key) {
@@ -35,10 +35,10 @@ public class GoogleSteps {
 //    public void user_should_see_in_the_title(String key) {
 //        Assert.assertTrue(driver.getTitle().contains(key));
 //    }
-//
-//
-//    @Then("user should see results are more than {int}")
-//    public void userShouldSeeResultsAreMoreThan(int result) {
-//        Assert.assertTrue(TextHandler.getLong(googleSearchPage.resultBar.getText().split(" ")[1]) > result);
-//    }
+
+
+    @Then("user should see results are more than {int}")
+    public void userShouldSeeResultsAreMoreThan(int result) {
+        Assert.assertTrue(TextHandler.getLong(googleSearchPage.resultBar.getText().split(" ")[1]) > result);
+    }
 }

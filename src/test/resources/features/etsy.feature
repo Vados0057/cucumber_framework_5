@@ -1,5 +1,5 @@
 Feature: Validate Etsy features
-
+@Regression
   Scenario: Validate Etsy Header
     Given user navigates to "https://www.etsy.com/"
     Then user should see below headers

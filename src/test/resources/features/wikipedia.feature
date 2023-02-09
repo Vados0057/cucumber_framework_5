@@ -1,4 +1,4 @@
-@Wiki
+@Regression
 Feature: Wikipedia search functionality
 
   Background:

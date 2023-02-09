@@ -1,3 +1,4 @@
+@Regression
 Feature: TechGlobal Training Functionalities
 
   Background:
